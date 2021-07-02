@@ -25,12 +25,12 @@ let deleteFood = (req, res) => {
 
 
 router.get('/', getFood);
-router.get('/:id', validator, getFood);
+// router.get('/:id', validator, getFood);
 
 
 router.post('/', createFood);
 
-router.put('/:id', validator, updateFood);
+router.put('/:id', updateFood);
 
 router.delete('/:id', deleteFood);
 
