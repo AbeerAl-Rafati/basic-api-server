@@ -5,7 +5,7 @@ class Clothes {
   constructor() {
     // initializing in memory db
     this.clothesDb = [];
-    // [{id,data:{name,role}}]
+
   }
 
 
@@ -19,7 +19,7 @@ class Clothes {
 
   /**
       *
-      * @param {*} obj = {type:string,semester:string}
+      * @param {*} obj = {type:string,color:string}
       */
   create(obj) {
     const record = {

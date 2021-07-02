@@ -5,7 +5,7 @@ class Food {
   constructor() {
     // initializing in memory db
     this.foodDb = [];
-    // [{id,data:{name,role}}]
+
   }
 
   read(id) {
@@ -19,7 +19,7 @@ class Food {
 
   /**
     *
-    * @param {*} obj = {food:string,ingredient:[]}
+    * @param {*} obj = {food:string,type : string}
     */
   create(obj) {
     const record = {

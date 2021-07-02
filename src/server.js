@@ -24,6 +24,9 @@ app.get('/', (req, res) => {
   res.send('Hello world');
 });
 
+app.get('/bad', (req, res) => {
+  throw new Error('Error .....');
+});
 
 app.use('*', notFoundHandler);
 app.use(errorHandler);
